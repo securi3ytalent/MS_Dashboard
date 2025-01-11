@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Focus - Bootstrap Admin Dashboard </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+    <!-- Summernote -->
+    <link href="./vendor/summernote/summernote.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+ <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+          <div class="sk-child sk-bounce1"></div>
+          <div class="sk-child sk-bounce2"></div>
+          <div class="sk-child sk-bounce3"></div>
+        </div>
+      </div>
+      <!--*******************
+          Preloader end
+      ********************-->
+  
+      <!--**********************************
+          Main wrapper start
+      ***********************************-->
+      <div id="main-wrapper">
+        <!--**********************************
+              Nav header start
+          ***********************************-->
+        <div class="nav-header">
+          <a href="index.html" class="brand-logo">
+            <img class="logo-compact" src="./images/logo.png" alt="" />
+            <img class="brand-title" src="./images/logo.png" alt="" />
+          </a>
+  
+          <div class="nav-control">
+            <div class="hamburger">
+              <span class="line"></span><span class="line"></span
+              ><span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <!--**********************************
+              Nav header end
+          ***********************************-->
+  
+        <!--**********************************
+              Header start
+          ***********************************-->
+        <div class="header">
+          <div class="header-content">
+            <nav class="navbar navbar-expand">
+              <div class="collapse navbar-collapse justify-content-between">
+                <div class="header-left">
+                  <div class="search_bar dropdown">
+                    <span
+                      class="search_icon p-3 c-pointer"
+                      data-toggle="dropdown"
+                    >
+                      <i class="mdi mdi-magnify"></i>
+                    </span>
+                    <div class="dropdown-menu p-0 m-0">
+                      <form>
+                        <input
+                          class="form-control"
+                          type="search"
+                          placeholder="Search"
+                          aria-label="Search"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+  
+                <ul class="navbar-nav header-right">
+                  <li class="nav-item dropdown notification_dropdown">
+                    <a
+                      class="nav-link"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                    >
+                      <i class="mdi mdi-bell"></i>
+                      <div class="pulse-css"></div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <ul class="list-unstyled">
+                        <li class="media dropdown-item">
+                          <span class="success"><i class="ti-user"></i></span>
+                          <div class="media-body">
+                            <a href="#">
+                              <p>
+                                <strong>Martin</strong> has added a
+                                <strong>customer</strong> Successfully
+                              </p>
+                            </a>
+                          </div>
+                          <span class="notify-time">3:20 am</span>
+                        </li>
+                        <li class="media dropdown-item">
+                          <span class="primary"
+                            ><i class="ti-shopping-cart"></i
+                          ></span>
+                          <div class="media-body">
+                            <a href="#">
+                              <p>
+                                <strong>Jennifer</strong> purchased Light
+                                Dashboard 2.0.
+                              </p>
+                            </a>
+                          </div>
+                          <span class="notify-time">3:20 am</span>
+                        </li>
+                        <li class="media dropdown-item">
+                          <span class="danger"><i class="ti-bookmark"></i></span>
+                          <div class="media-body">
+                            <a href="#">
+                              <p>
+                                <strong>Robin</strong> marked a
+                                <strong>ticket</strong> as unsolved.
+                              </p>
+                            </a>
+                          </div>
+                          <span class="notify-time">3:20 am</span>
+                        </li>
+                        <li class="media dropdown-item">
+                          <span class="primary"><i class="ti-heart"></i></span>
+                          <div class="media-body">
+                            <a href="#">
+                              <p>
+                                <strong>David</strong> purchased Light Dashboard
+                                1.0.
+                              </p>
+                            </a>
+                          </div>
+                          <span class="notify-time">3:20 am</span>
+                        </li>
+                        <li class="media dropdown-item">
+                          <span class="success"><i class="ti-image"></i></span>
+                          <div class="media-body">
+                            <a href="#">
+                              <p>
+                                <strong> James.</strong> has added a<strong
+                                  >customer</strong
+                                >
+                                Successfully
+                              </p>
+                            </a>
+                          </div>
+                          <span class="notify-time">3:20 am</span>
+                        </li>
+                      </ul>
+                      <a class="all-notification" href="#"
+                        >See all notifications <i class="ti-arrow-right"></i
+                      ></a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown header-profile">
+                    <a
+                      class="nav-link"
+                      href="#"
+                      role="button"
+                      data-toggle="dropdown"
+                    >
+                      <i class="mdi mdi-account"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="./app-profile.html" class="dropdown-item">
+                        <i class="icon-user"></i>
+                        <span class="ml-2">Profile </span>
+                      </a>
+                      <a href="./email-inbox.html" class="dropdown-item">
+                        <i class="icon-envelope-open"></i>
+                        <span class="ml-2">Inbox </span>
+                      </a>
+                      <a href="./page-login.html" class="dropdown-item">
+                        <i class="icon-key"></i>
+                        <span class="ml-2">Logout </span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!--**********************************
+              Header end ti-comment-alt
+          ***********************************-->
+  
+        <!--**********************************
+              Sidebar start
+          ***********************************-->
+        <div class="quixnav">
+          <div class="quixnav-scroll">
+            <ul class="metismenu" id="menu">
+              <li class="nav-label first"></li>
+              <li>
+                <a
+                  class="has-arrow"
+                  href="./index.html"
+                  aria-expanded="false"
+                  ><i class="icon icon-single-04"></i
+                  ><span class="nav-text">Dashboard</span></a
+                >
+                <!-- <ul aria-expanded="false">
+                              <li><a href="./index.html">Dashboard 1</a></li>
+                              <li><a href="./index2.html">Dashboard 2</a></li>
+                          </ul> -->
+              </li>
+              <!-- <li class="nav-label">Apps</li> -->
+              <li>
+                <a
+                  class="has-arrow"
+                  href="javascript:void()"
+                  aria-expanded="false"
+                  ><i class="icon icon-app-store"></i
+                  ><span class="nav-text">Apps</span></a
+                >
+                <ul aria-expanded="false">
+                  <li><a href="./app-profile.html">Profile</a></li>
+                  <li>
+                    <a
+                      class="has-arrow"
+                      href="javascript:void()"
+                      aria-expanded="false"
+                      >Email</a
+                    >
+                    <ul aria-expanded="false">
+                      <li><a href="./email-compose.html">Compose</a></li>
+                      <li><a href="./email-inbox.html">Inbox</a></li>
+                      <li><a href="./email-read.html">Read</a></li>
+                    </ul>
+                  </li>
+                  <!-- <li><a href="./app-calender.html">Calendar</a></li> -->
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="has-arrow"
+                  href="javascript:void()"
+                  aria-expanded="false"
+                  ><i class="icon icon-chart-bar-33"></i
+                  ><span class="nav-text">Order</span></a
+                >
+                <ul aria-expanded="false">
+                  <li><a href="./oder.html">Order List</a></li>
+                  <li><a href="./order-create.html">Order Create</a></li>
+                  <!-- <li><a href="./chart-chartjs.html">Chartjs</a></li>
+                              <li><a href="./chart-chartist.html">Chartist</a></li>
+                              <li><a href="./chart-sparkline.html">Sparkline</a></li>
+                              <li><a href="./chart-peity.html">Peity</a></li> -->
+                </ul>
+              </li>
+              <!-- <li class="nav-label">Components</li> -->
+              <li>
+                <a
+                  class="has-arrow"
+                  href="javascript:void()"
+                  aria-expanded="false"
+                  ><i class="icon icon-world-2"></i
+                  ><span class="nav-text">Product</span></a
+                >
+                <ul aria-expanded="false">
+                  <li><a href="./Produt-list.html">Product List</a></li>
+  
+                  <li><a href="./product-add.html">Product Add</a></li>
+                  <!-- <li><a href="./ui-badge.html">Badge</a></li>
+                              <li><a href="./ui-button.html">Button</a></li>
+                              <li><a href="./ui-modal.html">Modal</a></li>
+                              <li><a href="./ui-button-group.html">Button Group</a></li>
+                              <li><a href="./ui-list-group.html">List Group</a></li>
+                              <li><a href="./ui-media-object.html">Media Object</a></li>
+                              <li><a href="./ui-card.html">Cards</a></li>
+                              <li><a href="./ui-carousel.html">Carousel</a></li>
+                              <li><a href="./ui-dropdown.html">Dropdown</a></li>
+                              <li><a href="./ui-popover.html">Popover</a></li>
+                              <li><a href="./ui-progressbar.html">Progressbar</a></li>
+                              <li><a href="./ui-tab.html">Tab</a></li>
+                              <li><a href="./ui-typography.html">Typography</a></li>
+                              <li><a href="./ui-pagination.html">Pagination</a></li>
+                              <li><a href="./ui-grid.html">Grid</a></li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="gallery.html" aria-expanded="false"
+                  ><i class="icon icon-globe-2"></i
+                  ><span class="nav-text">Gallery</span></a
+                >
+              </li>
+              <!-- <li class="nav-label">Forms</li> -->
+              <li>
+                <a
+                  class="has-arrow"
+                  href="javascript:void()"
+                  aria-expanded="false"
+                  ><i class="icon icon-form"></i
+                  ><span class="nav-text">Tools</span></a
+                >
+                <ul aria-expanded="false">
+                  <!-- <li><a href="./form-element.html">Form Elements</a></li>
+                  <li><a href="./form-wizard.html">Wizard</a></li>
+                  <li><a href="./form-editor-summernote.html">Summernote</a></li> -->
+                  <li><a href="salary-sheet.html">salary-sheet</a></li>
+                  <!-- <li>
+                    <a href="form-validation-jquery.html">User-List</a>
+                  </li> -->
+                </ul>
+              </li>
+  
+              <!-- <li>
+                <a
+                  class="has-arrow"
+                  href="javascript:void()"
+                  aria-expanded="false"
+                  ><i class="icon icon-plug"></i
+                  ><span class="nav-text">salary</span></a
+                >
+                <ul aria-expanded="false">
+                  <li><a href="./uc-select2.html">sheet</a></li>
+                  <li><a href="./uc-nestable.html">Nestedable</a></li>
+                  <li><a href="./uc-noui-slider.html">Noui Slider</a></li>
+                  <li><a href="./uc-sweetalert.html">Sweet Alert</a></li>
+                  <li><a href="./uc-toastr.html">Toastr</a></li>
+                  <li><a href="./map-jqvmap.html">Jqv Map</a></li>
+                </ul>
+              </li> -->
+  
+              <!-- <li class="nav-label">Table</li> -->
+              <li>
+                <a
+                  class="has-arrow"
+                  href="javascript:void()"
+                  aria-expanded="false"
+                  ><i class="icon icon-layout-25"></i
+                  ><span class="nav-text">Admin Access</span></a
+                >
+                <ul aria-expanded="false">
+                  <li><a href="table-bootstrap-basic.html">Admin User</a></li>
+                  <li><a href="table-datatable-basic.html">customer</a></li>
+                </ul>
+              </li>
+  
+              <!-- <li class="nav-label">Extra</li> -->
+              <li>
+                <a
+                  class="has-arrow"
+                  href="javascript:void()"
+                  aria-expanded="false"
+                  ><i class="icon icon-single-copy-06"></i
+                  ><span class="nav-text">Pages</span></a
+                >
+                <ul aria-expanded="false">
+                  <li><a href="./page-register.html">Register</a></li>
+                  <li><a href="./page-login.html">Login</a></li>
+                  <li>
+                    <a
+                      class="has-arrow"
+                      href="javascript:void()"
+                      aria-expanded="false"
+                      >Error</a
+                    >
+                    <ul aria-expanded="false">
+                      <li><a href="./page-error-400.html">Error 400</a></li>
+                      <li><a href="./page-error-403.html">Error 403</a></li>
+                      <li><a href="./page-error-404.html">Error 404</a></li>
+                      <li><a href="./page-error-500.html">Error 500</a></li>
+                      <li><a href="./page-error-503.html">Error 503</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="./page-lock-screen.html">Lock Screen</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--**********************************
+              Sidebar end
+          ***********************************-->
+  
+
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+
+
+
+    
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Hi, welcome back!</h4>
+                            <p class="mb-0">Producr Add page</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Product</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Upload</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-xl-12 col-xxl-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Product Tittle</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="basic-form">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control input-default " placeholder="Product Tittle">
+                                    </div>
+                                    
+
+                                    
+                                    <!-- ========================= -->
+
+                                    <style>
+                                        .imagePreview {
+                                            width: 100%;
+                                            height: 100px;
+                                            background-size: cover;
+                                            background-position: center;
+                                            background-color: rgb(170, 186, 255);
+                                        }
+                                        .imgUp {
+                                            position: relative;
+                                        }
+                                        .imgAdd {
+                                            cursor: pointer;
+                                            font-size: 20px;
+                                            margin-top: 10px;
+                                        }
+                                        .del {
+                                            position: absolute;
+                                            top: -10px;
+                                            right: -10px;
+                                            cursor: pointer;
+                                        }
+                                    </style>
+                                </head>
+                                <body>
+                                
+                                <div class=" mt-5">
+                                    <div class="row">
+                                        <div class="col-sm-2 imgUp">
+                                            <div class="imagePreview"></div>
+                                            <label class="btn btn-primary my-3">
+                                                Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                                            </label>
+                                        </div><!-- col-2 -->
+                                        <i class="fa fa-plus imgAdd"></i>
+                                    </div><!-- row -->
+                                </div><!-- container -->
+                                
+                                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                                <!-- Bootstrap 4 JS (for interactivity) -->
+                                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                                
+                                <script>
+                                    // Add a new file input field and image preview on click of the add button
+                                    $(".imgAdd").click(function(){
+                                        $(this).closest(".row").find('.imgAdd').before('<div class="col-sm-2 imgUp"><div class="imagePreview"></div><label class="btn btn-primary my-3">Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="fa fa-times del"></i></div>');
+                                    });
+                                
+                                    // Delete the image preview, file input field, and upload button when the delete icon is clicked
+                                    $(document).on("click", "i.del", function() {
+                                        var parentDiv = $(this).parent();  // Get the parent div of the delete icon
+                                        parentDiv.find('.imagePreview').css("background-image", "none");  // Clear the image preview
+                                        parentDiv.find('input[type="file"]').val("");  // Reset the file input field
+                                        parentDiv.find('label').remove();  // Remove the upload button
+                                        parentDiv.remove();  // Remove the entire file input div
+                                    });
+                                
+                                    // Handle file input change to display image preview
+                                    $(function() {
+                                        $(document).on("change",".uploadFile", function()
+                                        {
+                                            var uploadFile = $(this);
+                                            var files = !!this.files ? this.files : [];
+                                            if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+                                
+                                            if (/^image/.test( files[0].type)){ // only image file
+                                                var reader = new FileReader(); // instance of the FileReader
+                                                reader.readAsDataURL(files[0]); // read the local file
+                                
+                                                reader.onloadend = function(){ // set image data as background of div
+                                                    uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+                                                }
+                                            }
+                                        });
+                                    });
+                                </script>
+
+                                </form>
+                                <div class="row">
+                                    <div class="col-xl-12 col-xxl-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title">Product Short Description</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="summernote"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- ++++++++++++++++++++++++++ -->
+                <div class="card-body">
+                    <h4>product price and Discount (%)</h4>
+                    <div class="basic-form">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" placeholder="Price">
+                                </div>
+
+                                <div class="col mt-2 mt-sm-0">
+                                    <input type="text" class="form-control" placeholder=" Discount (%)">
+                                </div>
+                                <div class="col mt-2 mt-sm-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Brand Name">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary dropdown-toggle"  type="button" data-toggle="dropdown">Choose</button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">CASIO</a>
+                                                <div role="separator" class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">Q & Q</a>
+                                                <div role="separator" class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">SAMS</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="card-body">
+                    <div class="basic-form">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" placeholder="SKU: AE-1200WHB-1BV">
+                                </div>
+
+                                <div class="col mt-2 mt-sm-0">
+                                    <input type="text" class="form-control" placeholder="Product ID: S3-1337">
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="card-body">
+                    <div class="basic-form">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="width (mm)">
+                                </div>
+                                <div class="col mt-2 mt-sm-0">
+                                    <input type="text" class="form-control" placeholder="Height (mm)">
+                                </div>
+                                <div class="col mt-2 mt-sm-0">
+                                    <input type="text" class="form-control" placeholder="Dimensions ( 45 × 42.1 × 12.5 cm ) ">
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+<!-- ----------------------- -->
+
+
+                <div class="card-body">
+                    <div class="basic-form">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" value="" checked>In Stock</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" value="">Out of Stock</label>
+                                    </div>
+                                </div>
+                                <div class="col mt-2 mt-sm-0">
+                                    <input type="text" class="form-control" placeholder="Initial Number is Stack (08)">
+                                </div>
+                                <div class="col mt-2 mt-sm-0">
+                                    <select class="form-control form-control-sm">
+                                        <option>Product Categories Choose</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+<!-- ------------------------------ -->
+
+<div class="card-header">
+    <h4 class="card-title">Product Categories ADD</h4>
+</div>
+<div class="card-body">
+    <div class="basic-form">
+        <form>
+            <fieldset>
+                <div class="form-group">
+                    <label>Product Categories ADD</label>
+                    <input type="text" class="form-control" placeholder="Categories ADD">
+                </div>
+                <div class="form-group">
+                    <label>Product Categories Edit</label>
+                    <select class="form-control">
+                        <option>Product Categories Choose</option>
+                        <option>CASIO</option>
+                        <option>Q&Q</option>
+                    </select>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        I agree
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+
+
+                <!-- row -->
+                <div class="row">
+                    <div class="col-xl-12 col-xxl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Product Detailed Description</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="summernote"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-lg btn-block">Product Upload</button>
+            </div>
+        </div>
+
+
+
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright © msinternational &amp; Developed by <a href="https://securitytalent.net" target="_blank">Security Talent</a> 2024</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button start
+        ***********************************-->
+
+        <!--**********************************
+           Support ticket button end
+        ***********************************-->
+
+        
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="./vendor/global/global.min.js"></script>
+    <script src="./js/quixnav-init.js"></script>
+    <script src="./js/custom.min.js"></script>
+    
+
+    <!-- Summernote -->
+    <script src="./vendor/summernote/js/summernote.min.js"></script>
+    <!-- Summernote init -->
+    <script src="./js/plugins-init/summernote-init.js"></script>
+
+</body>
+
+</html>
