@@ -403,11 +403,303 @@
                     </div>
                 </div>
 
-
-
-
                 <div class="col-xl-12 col-xxl-12">
                     <div class="card">
+
+
+
+
+
+
+                      <form class="row p-4" >
+                        <div class="col-xl-4">
+                          <label for="staticEmail2" class="visually-hidden">Product ID</label>
+                          <input type="text" class="form-control" id="inputPassword2" placeholder="Product ID">
+                        </div>
+                        <div class="col-xl-4">
+                          <label for="inputPassword2" class="visually-hidden">Entry Date</label>
+                          <input disabled type="text" class="form-control" id="inputPassword2" placeholder="2025-02-11 5:54 AM">
+                        </div>
+
+                        <div class="col-xl-4">
+                          <label for="inputPassword2" class="visually-hidden">User Name</label>
+                          <input disabled type="text" disabled class="form-control" id="inputPassword2" placeholder="MEHEDI">
+                        </div>
+                      </form>
+
+                      <div class="form-group px-4">
+                        <label for="URL">Url's</label>
+                        <input disabled  id="URL" type="text" class="form-control input-default " placeholder="/Category/Product Name-Product CODE.html">
+                      </div>
+                      
+                      <div class="form-group  mx-4">
+                        <label for="Menu_ID">Select Product Category</label>
+                        <select name="Menu_ID" class="form-control validate[required]" id="Menu_ID">
+                          <option class="opacity-25" value="" selected>-- Select One --</option>
+                          <option value="44" seq="13">CASIO</option>
+                          <option value="150" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;G-SHOCK</option>
+                          <option value="147" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;EDIFICE</option>
+                          <option value="118" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;Watch for Men</option>
+                          <option value="120" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;Watch for Women</option>
+                          <option value="121" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;Calculators</option>
+                          <option value="122" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;Printing Calculators</option>
+                          <option value="123" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;Table Clock</option>
+                          <option value="124" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;Wall Clock</option>
+                          <option value="125" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;Stop Watch</option>
+                          <option value="146" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;Edifice</option>
+                          <option value="141" seq="20">&nbsp;&nbsp;&nbsp;&nbsp;Watch for Kids</option>
+                          <option value="45" seq="13">Q &amp; Q</option>
+                          <option value="46" seq="21">&nbsp;&nbsp;&nbsp;&nbsp;Watch for Men</option>
+                          <option value="126" seq="21">&nbsp;&nbsp;&nbsp;&nbsp;Watch for Women</option>
+                          <option value="142" seq="21">&nbsp;&nbsp;&nbsp;&nbsp;Watch for Kids</option>
+                          <option value="47" seq="13">SAMS</option>
+                          <option value="140" seq="13">&nbsp;&nbsp;&nbsp;&nbsp;Kids Items</option>
+                          <option value="127" seq="13">&nbsp;&nbsp;&nbsp;&nbsp;Watch for Men</option>
+                          <option value="129" seq="13">&nbsp;&nbsp;&nbsp;&nbsp;Calculators</option>
+                          <option value="151" seq="13">SKMEI</option>
+                          <option value="152" seq="14">&nbsp;&nbsp;&nbsp;&nbsp;Watch for Men</option>
+                          <option value="153" seq="14">&nbsp;&nbsp;&nbsp;&nbsp;Watch for Women</option>
+                          <option value="128" seq="13">Watch for Women</option>
+                        </select>
+                      </div>
+
+
+
+                      <div class="row px-4">
+                        <!-- Product Name -->
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <div class="col-md-12">
+                              <label for="Product_Name">Product Name</label>
+                              <input placeholder="Product Name" name="Product_Name" class="form-control validate[required]" type="text" id="Product_Name" value="">
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Product Code -->
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <div class="col-md-12">
+                              <label for="Product_Code">Product Code</label>
+                              <input name="Product_Code" placeholder="Product Code" class="form-control" type="number" id="Product_Code" value="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row" id="d-block-input">
+                        <div class="col-xl-12 col-xxl-12">
+                          <div class="card">
+                              <div class="card-header">
+                                  <h4 class="card-title">Product Short Description</h4>
+                              </div>
+                              <div class="card-body">
+                                  <div class="summernote"></div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="row" >
+                        <div class="col-xl-12 col-xxl-12">
+
+                          <div class="form-group  mx-4 ">
+                            <label for="Menu_ID">Select Brands</label>
+                            <select name="Menu_ID" class="form-control validate[required]" id="Menu_ID">
+                              <option class="opacity-25" value="" selected>-- Select One --</option>
+                              <option value="44" seq="13">CASIO</option>
+                              <option value="44" seq="13">Q & Q</option>
+                              <option value="44" seq="13">SAMS</option>
+                            </select>
+                          </div>
+
+                        </div>
+                      </div>
+
+
+
+                    
+
+
+
+
+                      <div class="container-fluid mx-1">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="Price">Price</label>
+                                    <div class="input-group">
+                                        <input type="text" id="Price" name="Price" class="form-control" value="0">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">৳</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Quantity">Quantity/Stock</label>
+                                    <div class="input-group">
+                                        <input type="number" id="Quantity" name="Quantity" class="form-control" value="1">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-hashtag"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="Discount">Discount</label>
+                                    <div class="input-group">
+                                        <input type="text" id="Discount" name="Discount" class="form-control" value="0">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-percent"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Min_Qty">Min Qty</label>
+                                    <div class="input-group">
+                                        <input type="number" id="Min_Qty" name="Min_Qty" class="form-control" value="1">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-hashtag"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="Total">Total</label>
+                                    <div class="input-group">
+                                        <input type="text" id="Total" name="Total" class="form-control" readonly value="0">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">৳</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Unit_ID">Unit</label>
+                                    <input type="text" id="Unit_ID" name="Unit_ID" class="form-control" value="PCS">
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="seq">Sequence</label>
+                                    <div class="input-group">
+                                        <input type="number" id="seq" name="seq" class="form-control" value="1115">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-hashtag"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="IsActive">Is Active?</label>
+                                    <input type="checkbox" id="IsActive" name="IsActive" checked> Yes/No
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Additional Checkbox Rows -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="Featured">Featured</label>
+                                    <input type="checkbox" id="Featured" name="Featured" checked> Yes/No
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="New_Product">New Product</label>
+                                    <input type="checkbox" id="New_Product" name="New_Product" checked> Yes/No
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="On_Sale">On Sale</label>
+                                    <input type="checkbox" id="On_Sale" name="On_Sale"> Yes/No
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="Sold_Out">Sold Out</label>
+                                    <input type="checkbox" id="Sold_Out" name="Sold_Out"> Yes/No
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- More Checkboxes -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="Up_Come">Up Come</label>
+                                    <input type="checkbox" id="Up_Come" name="Up_Come"> Yes/No
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="Best_Seller">Best Seller</label>
+                                    <input type="checkbox" id="Best_Seller" name="Best_Seller"> Yes/No
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="In_Stock">In Stock</label>
+                                    <input type="checkbox" id="In_Stock" name="In_Stock" checked> Yes/No
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="Scroller">Scroller</label>
+                                    <input type="checkbox" id="Scroller" name="Scroller"> Yes/No
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Contact Information -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="Call_Price">Call Price</label>
+                                    <input type="checkbox" id="Call_Price" name="Call_Price"> Yes/No
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <label for="Contact_No">Contact No</label>
+                                    <div class="input-group">
+                                        <input type="text" id="Contact_No" name="Contact_No" class="form-control" readonly value="">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-mobile"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <div class="card-header">
                             <h4 class="card-title">Product Tittle</h4>
                         </div>
@@ -463,8 +755,10 @@
                                 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
                                 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
                                 <!-- Bootstrap 4 JS (for interactivity) -->
-                                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-                                
+                                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
                                 <script>
                                     // Add a new file input field and image preview on click of the add button
                                     $(".imgAdd").click(function(){
@@ -501,162 +795,16 @@
                                 </script>
 
                                 </form>
-                                <div class="row">
-                                    <div class="col-xl-12 col-xxl-12">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <h4 class="card-title">Product Short Description</h4>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="summernote"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                              
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 <!-- ++++++++++++++++++++++++++ -->
-                <div class="card-body">
-                    <h4>product price and Discount (%)</h4>
-                    <div class="basic-form">
-                        <form>
-                            <div class="form-row">
-                                <div class="col-sm-7">
-                                    <input type="text" class="form-control" placeholder="Price">
-                                </div>
 
-                                <div class="col mt-2 mt-sm-0">
-                                    <input type="text" class="form-control" placeholder=" Discount (%)">
-                                </div>
-                                <div class="col mt-2 mt-sm-0">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Brand Name">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary dropdown-toggle"  type="button" data-toggle="dropdown">Choose</button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">CASIO</a>
-                                                <div role="separator" class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Q & Q</a>
-                                                <div role="separator" class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">SAMS</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                
-                                </div>
-                                
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
-                <div class="card-body">
-                    <div class="basic-form">
-                        <form>
-                            <div class="form-row">
-                                <div class="col-sm-7">
-                                    <input type="text" class="form-control" placeholder="SKU: AE-1200WHB-1BV">
-                                </div>
-
-                                <div class="col mt-2 mt-sm-0">
-                                    <input type="text" class="form-control" placeholder="Product ID: S3-1337">
-                                </div>
-                                
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
-                <div class="card-body">
-                    <div class="basic-form">
-                        <form>
-                            <div class="form-row">
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="width (mm)">
-                                </div>
-                                <div class="col mt-2 mt-sm-0">
-                                    <input type="text" class="form-control" placeholder="Height (mm)">
-                                </div>
-                                <div class="col mt-2 mt-sm-0">
-                                    <input type="text" class="form-control" placeholder="Dimensions ( 45 × 42.1 × 12.5 cm ) ">
-                                </div>
-                                
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
-
-<!-- ----------------------- -->
-
-
-                <div class="card-body">
-                    <div class="basic-form">
-                        <form>
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-check form-check-inline">
-                                        <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" value="" checked>In Stock</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" value="">Out of Stock</label>
-                                    </div>
-                                </div>
-                                <div class="col mt-2 mt-sm-0">
-                                    <input type="text" class="form-control" placeholder="Initial Number is Stack (08)">
-                                </div>
-                                <div class="col mt-2 mt-sm-0">
-                                    <select class="form-control form-control-sm">
-                                        <option>Product Categories Choose</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-
-<!-- ------------------------------ -->
-
-<div class="card-header">
-    <h4 class="card-title">Product Categories ADD</h4>
-</div>
-<div class="card-body">
-    <div class="basic-form">
-        <form>
-            <fieldset>
-                <div class="form-group">
-                    <label>Product Categories ADD</label>
-                    <input type="text" class="form-control" placeholder="Categories ADD">
-                </div>
-                <div class="form-group">
-                    <label>Product Categories Edit</label>
-                    <select class="form-control">
-                        <option>Product Categories Choose</option>
-                        <option>CASIO</option>
-                        <option>Q&Q</option>
-                    </select>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">
-                        I agree
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary mt-3">Submit</button>
-            </fieldset>
-        </form>
-    </div>
-</div>
 
 
 
